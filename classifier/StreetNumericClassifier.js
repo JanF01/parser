@@ -1,6 +1,6 @@
 const PhraseClassifier = require('./super/PhraseClassifier')
 const StreetNumericClassification = require('../classification/StreetNumericClassification')
-const pelias = require('../resources/pelias/dictionaries/libpostal')
+const libpostal = require('../resources/libpostal/libpostal')
 
 // dictionaries sourced from the libpostal project
 // see: https://github.com/openvenues/libpostal
@@ -8,7 +8,7 @@ const pelias = require('../resources/pelias/dictionaries/libpostal')
 class StreetNumericClassifier extends PhraseClassifier {
   setup () {
     this.index = {}
-    pelias.load(this.index, ['pl'], 'numeric_streets.txt', {
+    libpostal.load(this.index, ['pl'], 'numeric_streets.txt', {
       lowercase: true,
     })
   }
