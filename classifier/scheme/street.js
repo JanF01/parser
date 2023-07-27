@@ -255,6 +255,21 @@ module.exports = [
     ]
   },
   {
+    // 11 Listopada
+    confidence: 0.84,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      },
+      {
+        is: ['StreetNumericClassification'],
+        not: ['StreetClassification', 'StreetPrefixClassification']
+      }
+    ]
+  },
+  {
     // Boulevard du Général Charles De Gaulle
     confidence: 0.81,
     Class: StreetClassification,
