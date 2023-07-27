@@ -11,7 +11,7 @@ const testcase = (test, common) => {
   ])
 
   assert('11 listopada 2/4', [
-    { street: 'aleja 29 listopada' }, { housenumber: '2/4' }
+    { street: '11 listopada' }, { housenumber: '2/4' }
   ])
 
   assert('1 Pułku Strzelców Bytomskich 2-4', [

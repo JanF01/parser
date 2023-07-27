@@ -20,4 +20,4 @@ strzelców
 piechoty
 artylerii
 lekkiej
-
+szwoleżerów
