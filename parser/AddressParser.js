@@ -3,6 +3,7 @@ const AlphaNumericClassifier = require('../classifier/AlphaNumericClassifier')
 const TokenPositionClassifier = require('../classifier/TokenPositionClassifier')
 const HouseNumberClassifier = require('../classifier/HouseNumberClassifier')
 const PostcodeClassifier = require('../classifier/PostcodeClassifier')
+const StreetNumericClassifier = require('../classifier/StreetNumericClassifier')
 const StreetPrefixClassifier = require('../classifier/StreetPrefixClassifier')
 const StreetSuffixClassifier = require('../classifier/StreetSuffixClassifier')
 const StreetProperNameClassifier = require('../classifier/StreetProperNameClassifier')
@@ -50,6 +51,7 @@ class AddressParser extends Parser {
         // word classifiers
         new HouseNumberClassifier(),
         new PostcodeClassifier(),
+        new StreetNumericClassifier(),
         new StreetPrefixClassifier(),
         new StreetSuffixClassifier(),
         new StreetProperNameClassifier(),
