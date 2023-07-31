@@ -283,7 +283,7 @@ module.exports = [
         not: ['StreetClassification', 'StreetPrefixClassification']
       },
       {
-        is: ['StreetNumericClassification'],
+        is: ['StreetNumericClassification', 'AlphaClassification'],
         not: ['StreetClassification', 'StreetPrefixClassification']
       }
     ]
@@ -302,7 +302,34 @@ module.exports = [
         not: ['StreetClassification', 'StreetPrefixClassification']
       },
       {
+        is: ['StreetNumericClassification', 'AlphaClassification'],
+        not: ['StreetClassification', 'StreetPrefixClassification']
+      },
+      {
+        is: ['StreetNumericClassification', 'AlphaClassification'],
+        not: ['StreetClassification', 'StreetPrefixClassification']
+      }
+    ]
+  },
+  {
+    // 4 Pułku Piechoty Wojska Polskiego
+    confidence: 0.79,
+    Class: StreetClassification,
+    scheme: [
+      {
+        is: ['NumericClassification'],
+        not: ['StreetClassification', 'IntersectionClassification']
+      },
+      {
         is: ['StreetNumericClassification'],
+        not: ['StreetClassification', 'StreetPrefixClassification']
+      },
+      {
+        is: ['StreetNumericClassification', 'AlphaClassification'],
+        not: ['StreetClassification', 'StreetPrefixClassification']
+      },
+      {
+        is: ['StreetNumericClassification', 'AlphaClassification'],
         not: ['StreetClassification', 'StreetPrefixClassification']
       },
       {
