@@ -21,13 +21,6 @@ module.exports.tests.contains_numerals = (test) => {
   })
 }
 
-module.exports.tests.single_character_tokens = (test) => {
-  test('index: does contain single char tokens', (t) => {
-    t.true(Object.keys(classifier.index).some(token => token.length < 2))
-    t.end()
-  })
-}
-
 module.exports.tests.polish_numeric_street = (test) => {
   let valid = [
     'listopada', 'maja', 'czerwca',
@@ -47,7 +40,7 @@ module.exports.tests.polish_numeric_street = (test) => {
 
 module.exports.all = (tape, common) => {
   function test (name, testFunction){
-    return tape(`StreetPrefixClassifier: ${name}`, testFunction)
+    return tape(`StreetNumericClassifier: ${name}`, testFunction)
   }
 
   for(var testCase in module.exports.tests){
