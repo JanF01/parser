@@ -18,6 +18,10 @@ const testcase = (test, common) => {
     { street: '1 Pułku Strzelców Bytomskich' }, { housenumber: '2-4' }
   ])
 
+  assert('3 Warszawskiego Pułku Strzelców Polskich 11', [
+    { street: '3 Warszawskiego Pułku Strzelców Polskich' }, { housenumber: '11' }
+  ])
+
   assert('1 Pułku Szwoleżerów 178', [
     { street: '1 Pułku Szwoleżerów' }, { housenumber: '178' }
   ])
@@ -31,7 +35,7 @@ const testcase = (test, common) => {
   ])
 
   assert('Ulica Strzelecka 12, Nowy Sącz', [
-    { street: 'Ulica Strzelecka' }, { housenumber: '12'},
+    { street: 'Ulica Strzelecka' }, { housenumber: '12' },
     { locality: "Nowy Sącz" }
   ])
 
